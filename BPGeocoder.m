@@ -32,6 +32,12 @@
     [super geocodeAddressString:addressString completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error)
         {
+            if (error.code == kCLErrorGeocodeFoundNoResult)
+            {
+                // if the address could not be geocoded, just store an empty placemarks array in the cache for the address
+                [[BPGeocoder placemarkArrayCache] setObject:[NSArray array] forKey:addressString];
+            }
+            
             completionHandler(nil, error);
         }
         else
