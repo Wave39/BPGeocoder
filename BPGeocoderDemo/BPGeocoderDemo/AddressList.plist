@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>115 Federal St, Pittsburgh, PA 15212</string>
+	<string>1060 W Addison St, Chicago, IL 60613</string>
+	<string>4 Yawkey Way, Boston, MA 02215</string>
+	<string>24 Willie Mays Plaza, San Francisco, CA 94107</string>
+	<string>2401 Ontario St, Cleveland, OH 44115</string>
+	<string>1 Tropicana Dr, St Petersburg, FL 33705</string>
+	<string>100 Joe Nuxhall Way, Cincinnati, OH 45202</string>
+	<string>2100 Woodward Ave, Detroit, MI 48201</string>
+	<string>333 W Camden St, Baltimore, MD 21201</string>
+	<string>7000 Coliseum Way, Oakland, CA 94621</string>
+	<string>1250 1st Ave S, Seattle, WA 98134</string>
+	<string>100 Park Blvd, San Diego, CA 92101</string>
+	<string>401 East Jefferson Street, Phoenix, AZ 85004</string>
+	<string>755 Hank Aaron Drive, Atlanta, GA 30315</string>
+	<string>2001 Blake Street, Denver, CO 80205-2000</string>
+	<string>One Brewers Way, Milwaukee, WI 53214</string>
+	<string>1 Blue Jays Way, Toronto, Ontario, Canada M5V1J1</string>
+</array>
+</plist>
