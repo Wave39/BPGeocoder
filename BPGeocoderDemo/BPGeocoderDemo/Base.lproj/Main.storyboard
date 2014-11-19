@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-MO-8Mv">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="BPGeocoderDemo" id="Rqd-vX-hFi"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bb1-x8-5qA">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xSf-xv-n8a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ztB-Rm-q2r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bb1-x8-5qA" firstAttribute="top" secondItem="qDT-MO-8Mv" secondAttribute="bottom" id="2UG-qk-5UZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qDT-MO-8Mv" secondAttribute="trailing" constant="-16" id="JPv-4L-sgu"/>
+                            <constraint firstItem="qDT-MO-8Mv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SYv-Qw-Nuo"/>
+                            <constraint firstItem="qDT-MO-8Mv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ZXf-lr-gur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bb1-x8-5qA" secondAttribute="trailing" constant="-16" id="chs-Yj-fqp"/>
+                            <constraint firstItem="Bb1-x8-5qA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="cuA-wr-B5h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bb1-x8-5qA" secondAttribute="bottom" id="l3y-Mc-h50"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theTable" destination="Bb1-x8-5qA" id="8YP-Kt-Yu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

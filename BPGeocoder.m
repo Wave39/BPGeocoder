@@ -25,10 +25,12 @@
     NSArray *cachedObject = [[BPGeocoder placemarkArrayCache] objectForKey:addressString];
     if (cachedObject != nil)
     {
+        _retrievedFromCache = YES;
         completionHandler(cachedObject, nil);
         return;
     }
     
+    _retrievedFromCache = NO;
     [super geocodeAddressString:addressString completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error)
         {

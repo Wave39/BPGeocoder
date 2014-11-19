@@ -11,6 +11,8 @@
 {
 }
 
+@property (nonatomic) BOOL retrievedFromCache;
+
 - (void)geocodeAddressString:(NSString *)addressString completionHandler:(CLGeocodeCompletionHandler)completionHandler;
 
 @end
