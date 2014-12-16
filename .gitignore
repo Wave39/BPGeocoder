@@ -6,3 +6,9 @@
 #
 # Pods/
 
+
+*.xcuserstate
+
+*.xcscheme
+
+BPGeocoderDemo/BPGeocoderDemo.xcodeproj/xcuserdata/bp.xcuserdatad/xcschemes/xcschememanagement.plist
