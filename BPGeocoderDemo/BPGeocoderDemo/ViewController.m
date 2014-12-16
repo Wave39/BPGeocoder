@@ -13,7 +13,6 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray *addressArray;
-@property (nonatomic, strong) NSOperationQueue *geocodeOperationQueue;
 
 @end
 
@@ -60,7 +59,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     _addressArray = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AddressList" ofType:@"plist"]];
-    _geocodeOperationQueue = [[NSOperationQueue alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
